@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button {
+    @apply bg-accent-lighter shadow-md ease-linear transition-all flex items-center space-x-2 font-semibold text-secondary px-4 py-2 rounded-md duration-200;
+}
+
+.button:hover {
+    @apply shadow-none;
+}
+
+.button:focus {
+    @apply ring ring-accent outline-none;
+}
+
+.button-primary {
+    @apply flex items-center justify-center space-x-2 text-white py-2 rounded-md outline-none bg-secondary duration-300 px-4 font-medium;
+}
+
+.button-primary:hover {
+    @apply bg-opacity-80;
+}
+
+.button-primary:focus {
+    @apply outline-none;
+}
+
+.next-image {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+}
