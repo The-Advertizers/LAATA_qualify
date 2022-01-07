@@ -1,5 +1,4 @@
 import {AtSymbolIcon, LocationMarkerIcon, PhoneIcon} from "@heroicons/react/solid";
-import {basePath} from "../next.config";
 
 function Phone({number}) {
     return (
@@ -29,19 +28,8 @@ export default function Footer() {
             <div className={'animate-slideup'}>
                 <div className={`bg-secondary sticky w-full`}>
                     <div className='container mx-auto w-full h-auto pb-8 pt-10 px-4'>
-                        <div
-                            className='pb-4 w-full grid md:grid-cols-2 grid-cols-1 overflow-auto md:overflow-hidden text-accent-lighter sm:place-items-center'>
-                            <div className='mt-8 px-2 place-self-center'>
-                                {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img className={'h-20 md:h-24 w-auto bg-accent-lighter py-6 px-8 rounded-md'}
-                                     src={`${basePath}/logo.png`}
-                                     alt={'logo'}/>
-                                <p className={'font-semibold mt-2 text-center'}>
-                                    Raising The Standards <br/>
-                                    in Aesthetics
-                                </p>
-                            </div>
-                            <div className='mt-8 md:mt-12 px-2 space-y-1'>
+                        <div className='pb-4 w-full grid md:grid-cols-2 grid-cols-1 overflow-auto md:overflow-hidden text-accent-lighter sm:place-items-center'>
+                            <div className='w-full max-w-xl mt-8 md:mt-12 px-2 space-y-1'>
                                 <h1 className='text-2xl font-bold'>UK Office</h1>
                                 <div className={'flex items-center space-x-2'}>
                                     <LocationMarkerIcon className={'w-4'}/>
@@ -57,7 +45,7 @@ export default function Footer() {
                                 <Phone number={'+44 (0)208 062 5439'}/>
                                 <Whatsapp number={'+44 (0)7377 55 6533'}/>
                             </div>
-                            <div className='mt-8 md:mt-12 px-2 space-y-1'>
+                            <div className='w-full max-w-xl mt-8 md:mt-12 px-2 space-y-1'>
                                 <h1 className='text-2xl font-bold'>Islamabad Office</h1>
                                 <div className={'flex items-center space-x-2'}>
                                     <LocationMarkerIcon className={'w-4'}/>
@@ -73,7 +61,7 @@ export default function Footer() {
                                 </div>
                                 <Phone number={'+92 307 1114204'}/>
                             </div>
-                            <div className='mt-8 md:mt-12 px-2 space-y-1'>
+                            <div className='w-full max-w-xl mt-8 md:mt-12 px-2 space-y-1'>
                                 <h1 className='text-2xl font-bold'>Lahore Office</h1>
                                 <div className={'flex items-center space-x-2'}>
                                     <LocationMarkerIcon className={'w-4'}/>
@@ -87,6 +75,17 @@ export default function Footer() {
                                        className='text-sm'>info@londonaestheticsandtrainingacademy.com.pk</a>
                                 </div>
                                 <Phone number={'+92 320 8465075'}/>
+                            </div>
+                            <div className='w-full max-w-xl mt-8 md:mt-12 px-2 space-y-1'>
+                                <h1 className='text-2xl font-bold'>Karachi Franchise</h1>
+                                <div className={'flex items-center space-x-2'}>
+                                    <LocationMarkerIcon className={'w-4'}/>
+                                    <span className='text-sm'>
+                                        Plot 148, Block 3, B.M.C.H.S, Near Shaheen Park,<br/>
+                                        Bahadurabad, Karachi.
+                                    </span>
+                                </div>
+                                <Phone number={'+92 337 1440999'}/>
                             </div>
                         </div>
                     </div>

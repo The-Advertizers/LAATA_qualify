@@ -22,6 +22,7 @@ function ImageEntry({image, desc}) {
     );
 }
 
+// noinspection JSUnusedGlobalSymbols
 export default function Home() {
     return (
         <div>
