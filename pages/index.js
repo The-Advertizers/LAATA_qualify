@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Header from "../components/header";
 import ParticlesBackground from "../components/particles_background";
 import Footer from "../components/footer";
-import Image from "next/image";
 import {basePath} from "../next.config";
 
 function ImageEntry({image, desc}) {
@@ -11,13 +10,7 @@ function ImageEntry({image, desc}) {
             <div className={'m-4 flex'}>
                 <div className={'max-w-4xl h-auto p-8 bg-accent-lighter rounded-md'}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <Image
-                        width={'1000'}
-                        height={'1000'}
-                        className={'rounded-md'}
-                        src={image}
-                        alt={'image'}
-                    />
+                    <img className={'rounded-md'} src={image} alt={'image'}/>
                     {(desc && desc !== '') &&
                     <div className={'mt-8 text-secondary'}>
                         {desc}
