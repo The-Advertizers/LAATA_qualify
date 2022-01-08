@@ -87,6 +87,11 @@ export default function Footer() {
                                 </div>
                                 <Phone number={'+92 337 1440999'}/>
                             </div>
+
+                            <div className='w-full max-w-xl mt-8 md:mt-12 px-2 space-y-1'>
+                                <h1 className='text-2xl font-bold'>Faisalabad</h1>
+                                <p>opening soon</p>
+                            </div>
                         </div>
                     </div>
                 </div>
